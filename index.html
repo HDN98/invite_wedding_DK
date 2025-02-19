@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приглашение на свадьбу</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
-        <header>
+        <header class="animate__animated animate__fadeInDown">
             <h1>Мы женимся!</h1>
             <p>Дорогие друзья и родные, приглашаем вас разделить с нами радость нашего праздника!</p>
         </header>
 
-        <section class="details">
+        <section class="details animate__animated animate__fadeInLeft">
             <h2>Детали мероприятия</h2>
             <div class="info">
                 <p><strong>Дата:</strong> 22 октября 2023 года</p>
@@ -22,7 +24,7 @@
             </div>
         </section>
 
-        <section class="rsvp">
+        <section class="rsvp animate__animated animate__fadeInRight">
             <h2>Подтвердите участие</h2>
             <form id="rsvpForm">
                 <label for="name">Ваше имя:</label>
@@ -39,10 +41,15 @@
             <p id="responseMessage"></p>
         </section>
 
-        <footer>
+        <footer class="animate__animated animate__fadeInUp">
             <p>С любовью, Анна и Иван</p>
         </footer>
     </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
 
     <script src="script.js"></script>
 </body>
