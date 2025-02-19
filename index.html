@@ -3,153 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свадьба [Имена Жениха и Невесты]</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #f8f8f8;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        h1 {
-            color: #d9534f; /* Цвет вашей темы */
-            font-size: 3em;
-            margin: 0;
-        }
-        nav {
-            background-color: #eee;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #333;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #ddd;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        h2 {
-            color: #d9534f;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .rsvp-form {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .rsvp-form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .rsvp-form input[type="text"],
-        .rsvp-form input[type="email"],
-        .rsvp-form select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box; /* Важно для правильной ширины */
-        }
-        .rsvp-form button {
-            background-color: #d9534f;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        .rsvp-form button:hover {
-            background-color: #c9302c;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #eee;
-            font-size: 0.8em;
-            color: #666;
-        }
-    </style>
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Свадьба [Имя Жениха] и [Имя Невесты]</h1>
-        <p>Дата: [Дата Свадьбы] | Место: [Место проведения]</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Мы женимся!</h1>
+            <p>Дорогие друзья и родные, приглашаем вас разделить с нами радость нашего праздника!</p>
+        </header>
 
-    <nav>
-        <a href="#о-нас">О нас</a>
-        <a href="#место">Место</a>
-        <a href="#rsvp">RSVP</a>
-        <!-- Добавьте другие разделы, если нужно -->
-    </nav>
+        <section class="details">
+            <h2>Детали мероприятия</h2>
+            <div class="info">
+                <p><strong>Дата:</strong> 22 октября 2023 года</p>
+                <p><strong>Место:</strong> Ресторан "Золотой зал", Москва</p>
+                <p><strong>Время:</strong> 18:00</p>
+            </div>
+        </section>
 
-    <section id="о-нас">
-        <h2>О нас</h2>
-        <p>Текст о женихе и невесте, истории знакомства и т.д.  Здесь можно рассказать о своих мечтах и планах на будущее.</p>
-        <img src="[URL картинки с женихом и невестой]" alt="Жених и Невеста" width="400">
-    </section>
-
-    <section id="место">
-        <h2>Место проведения</h2>
-        <p>[Описание места проведения, адрес, фотографии].  Можно вставить карту Google Maps.</p>
-        <img src="[URL картинки места проведения]" alt="Место проведения" width="600">
-    </section>
-
-    <section id="rsvp">
-        <h2>RSVP</h2>
-        <p>Пожалуйста, подтвердите ваше присутствие до [дата].</p>
-        <div class="rsvp-form">
-            <form action="[ссылка на обработчик формы - например, скрипт на сервере]" method="POST">
-                <label for="name">Имя:</label>
+        <section class="rsvp">
+            <h2>Подтвердите участие</h2>
+            <form id="rsvpForm">
+                <label for="name">Ваше имя:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Ваш email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Присутствие:</label>
-                <select name="attending" required>
-                    <option value="">Выберите</option>
-                    <option value="yes">Да, буду</option>
-                    <option value="no">Нет, не смогу</option>
-                </select>
-
                 <label for="guests">Количество гостей:</label>
-                <input type="number" id="guests" name="guests" min="1" value="1">
+                <input type="number" id="guests" name="guests" min="1" required>
 
-                <label for="dietary_restrictions">Пищевые ограничения (если есть):</label>
-                <input type="text" id="dietary_restrictions" name="dietary_restrictions">
-
-                <button type="submit">Отправить RSVP</button>
+                <button type="submit">Отправить</button>
             </form>
-        </div>
-    </section>
+            <p id="responseMessage"></p>
+        </section>
 
-    <footer>
-        <p>&copy; [Год] [Имена Жениха и Невесты]</p>
-    </footer>
+        <footer>
+            <p>С любовью, Анна и Иван</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
