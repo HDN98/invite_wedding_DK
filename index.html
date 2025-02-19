@@ -1,48 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="./styles/style.css">
-
-    <meta property="og:title" content="Заголовок страницы в OG">
-    <meta property="og:description" content="Описание страницы в OG">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com/">
-  </head>
-  <body>
+    <title>Свадьба [Имена Жениха и Невесты]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        h1 {
+            color: #d9534f; /* Цвет вашей темы */
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        h2 {
+            color: #d9534f;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .rsvp-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .rsvp-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .rsvp-form input[type="text"],
+        .rsvp-form input[type="email"],
+        .rsvp-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Важно для правильной ширины */
+        }
+        .rsvp-form button {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .rsvp-form button:hover {
+            background-color: #c9302c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
     <header>
-      <h1>Личный сайт</h1>
-      <p>Который сделан на основе готового шаблона</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Эта страница</a></li>
-          <li><a href="catalog.html">Другая страница</a></li>
-        </ul>
-      </nav>
+        <h1>Свадьба [Имя Жениха] и [Имя Невесты]</h1>
+        <p>Дата: [Дата Свадьбы] | Место: [Место проведения]</p>
     </header>
-    <main>
-      <article>
-        <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
-        </section>
-        <section>
-          <h2>Вторая секция</h2>
-          <p>Она тоже обо мне</p>
-        </section>
-        <section>
-          <h2>И третья</h2>
-          <p>Вы уже должны были начать догадываться.</p>
-        </section>
-      </article>
-    </main>
+
+    <nav>
+        <a href="#о-нас">О нас</a>
+        <a href="#место">Место</a>
+        <a href="#rsvp">RSVP</a>
+        <!-- Добавьте другие разделы, если нужно -->
+    </nav>
+
+    <section id="о-нас">
+        <h2>О нас</h2>
+        <p>Текст о женихе и невесте, истории знакомства и т.д.  Здесь можно рассказать о своих мечтах и планах на будущее.</p>
+        <img src="[URL картинки с женихом и невестой]" alt="Жених и Невеста" width="400">
+    </section>
+
+    <section id="место">
+        <h2>Место проведения</h2>
+        <p>[Описание места проведения, адрес, фотографии].  Можно вставить карту Google Maps.</p>
+        <img src="[URL картинки места проведения]" alt="Место проведения" width="600">
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <p>Пожалуйста, подтвердите ваше присутствие до [дата].</p>
+        <div class="rsvp-form">
+            <form action="[ссылка на обработчик формы - например, скрипт на сервере]" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Присутствие:</label>
+                <select name="attending" required>
+                    <option value="">Выберите</option>
+                    <option value="yes">Да, буду</option>
+                    <option value="no">Нет, не смогу</option>
+                </select>
+
+                <label for="guests">Количество гостей:</label>
+                <input type="number" id="guests" name="guests" min="1" value="1">
+
+                <label for="dietary_restrictions">Пищевые ограничения (если есть):</label>
+                <input type="text" id="dietary_restrictions" name="dietary_restrictions">
+
+                <button type="submit">Отправить RSVP</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
+        <p>&copy; [Год] [Имена Жениха и Невесты]</p>
     </footer>
-    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
-  </body>
+</body>
 </html>
