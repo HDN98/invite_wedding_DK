@@ -15,3 +15,9 @@ document.getElementById('rsvpForm').addEventListener('submit', function (event) 
     // Очистка формы
     document.getElementById('rsvpForm').reset();
 });
+
+// Автовоспроизведение музыки
+document.addEventListener('DOMContentLoaded', function () {
+    const music = document.getElementById('backgroundMusic');
+    music.play();
+});
