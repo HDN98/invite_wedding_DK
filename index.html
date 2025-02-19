@@ -5,55 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приглашение на свадьбу</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="container">
-        <header class="animate__animated animate__fadeInDown">
-            <h1>Мы женимся!</h1>
-            <p>Дорогие друзья и родные, приглашаем вас разделить с нами радость нашего праздника!</p>
-        </header>
 
-        <section class="details animate__animated animate__fadeInLeft">
-            <h2>Детали мероприятия</h2>
-            <div class="info">
-                <p><strong>Дата:</strong> 22 октября 2023 года</p>
-                <p><strong>Место:</strong> Ресторан "Золотой зал", Москва</p>
-                <p><strong>Время:</strong> 18:00</p>
-            </div>
-        </section>
 
-        <section class="rsvp animate__animated animate__fadeInRight">
-            <h2>Подтвердите участие</h2>
-            <form id="rsvpForm">
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="guests">Количество гостей:</label>
-                <input type="number" id="guests" name="guests" min="1" required>
-
-                <button type="submit">Отправить</button>
-            </form>
-            <p id="responseMessage"></p>
-        </section>
-
-        <footer class="animate__animated animate__fadeInUp">
-            <p>С любовью, Анна и Иван</p>
-        </footer>
-    </div>
-
-    <audio src="music.mp3">
-        <p>Если вы видите это, ваш браузер не поддерживает тег audio.</p>
-    </audio>
-    
-    <audio id="backgroundMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
-        Ваш браузер не поддерживает аудио элемент.
-    </audio>
+<audio id="sound"><source src="music.mp3" type="audio/mp3"></audio>
+<div style="display:flex; justify-content:center;">
+<button id='music-button' class='music-button' onclick="playSound('sound')">        
+</button></div>
 
     <script src="script.js"></script>
 </body>
