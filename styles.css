@@ -5,7 +5,7 @@
     padding: 0;
     line-height: 1.6;
     overflow: hidden;
-	display: flex;
+	 display: flex;
     justify-content: center; 
     align-items: flex-start; 
     height: 100vh; 
@@ -31,13 +31,6 @@
     background-color: transparent; 
     justify-content: center;
     align-items: center;
-}
-
-.background {
-  background-image: url(star.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: scroll;
 }
 
 div {
