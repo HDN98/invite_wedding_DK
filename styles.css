@@ -1,11 +1,11 @@
  body {
-	 font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif;
     color: #fff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     overflow: hidden;
-	 display: flex;
+	display: flex;
     justify-content: center; 
     align-items: flex-start; 
     height: 100vh; 
@@ -13,6 +13,7 @@
 }
 
 .background {
+  background-image: url(star.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: scroll;
@@ -22,8 +23,8 @@
     padding: 0;
     margin-top: 20px;
     cursor: pointer; 
-    height: 60pt;
-    width: 60pt; 
+    height: 45pt;
+    width: 45pt; 
     background-image: url('music-button.svg');
     background-size: cover;
     border: none;
@@ -31,6 +32,29 @@
     justify-content: center;
     align-items: center;
 }
+
+.background {
+  background-image: url(star.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+}
+
+
+@media (max-width: 768px) {
+    .music-button {
+        height: 50px; /* Определяем высоту для мобильных устройств */
+        width: 50px; /* Определяем ширину для мобильных устройств */
+    }
+}
+
+@media (max-width: 480px) {
+    .music-button {
+        height: 40px; /* Определяем высоту для маленьких экранов */
+        width: 40px; /* Определяем ширину для маленьких экранов */
+    }
+}
+
 div {
   text-align: center;
 }
