@@ -25,7 +25,7 @@
     cursor: pointer; 
     height: 60pt;
     width: 60pt; 
-    background-image: url('music-button.png');
+    background-image: url('music-button.svg');
     background-size: cover;
     border: none;
     background-color: transparent; 
