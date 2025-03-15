@@ -47,6 +47,14 @@
   background-attachment: scroll;
 }
 
+@media (max-width: 768px) {
+    .music-button {
+        width: 35pt;
+        height: 35pt;
+    }
+}
+
+
 div {
   text-align: center;
 }
