@@ -19,6 +19,13 @@
   background-attachment: scroll;
 }
 
+.container {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    height: 100vh; /* Высота контейнера равна высоте вьюпорта */
+}
+
 .music-button {
     padding: 0;
     margin-top: 20px;
@@ -43,19 +50,20 @@
 
 @media (max-width: 768px) {
     .music-button {
-        height: 30pt; /* Определяем высоту для мобильных устройств */
-        width: 30pt; /* Определяем ширину для мобильных устройств */
+        height: 50px; /* Определяем высоту для мобильных устройств */
+        width: 50px; /* Определяем ширину для мобильных устройств */
     }
 }
 
 @media (max-width: 480px) {
     .music-button {
-        height: 20px; /* Определяем высоту для маленьких экранов */
-        width: 20px; /* Определяем ширину для маленьких экранов */
+        height: 40px; /* Определяем высоту для маленьких экранов */
+        width: 40px; /* Определяем ширину для маленьких экранов */
     }
 }
 
 div {
   text-align: center;
 }
+
 
