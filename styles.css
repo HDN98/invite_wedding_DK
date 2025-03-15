@@ -32,7 +32,7 @@
     cursor: pointer; 
     height: 45pt;
     width: 45pt; 
-    background-image: url('music-button-on.svg');
+    background-image: url('music-button-off.svg');
     background-size: cover;
     border: none;
     background-color: transparent; 
