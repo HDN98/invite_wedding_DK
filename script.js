@@ -24,10 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function playSound(sound) {
   var song = document.getElementById(sound);
+  var musicButton = document.getElementById("music-button");
   song.volume = 1;
   if (song.paused) {
     song.play();
+	musicButton.style.backgroundImage = "url('music-button-on.svg')";
   } else {
     song.pause();
+	musicButton.style.backgroundImage = "url('music-button-off.svg')";
   }
 }
