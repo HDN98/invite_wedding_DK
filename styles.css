@@ -3,27 +3,31 @@
     color: #fff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    overflow: hidden;
-	display: flex;
+	hight: 100%;
+    overflow: auto;
     justify-content: center; 
     align-items: flex-start; 
-    height: 100vh; 
-    margin: 0;
+    height: auto; 
+	overflow-x: hidden;
+
 }
 
 .background {
-  background-image: url(star.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-image: url('picture/image18.png');
+	background-size: 100% 50%; /* Масштабирует изображение, чтобы заполнить весь фон */
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 .container {
     display: flex;
     justify-content: center; /* Центрируем по горизонтали */
-    align-items: flex-start; /* Выравниваем по верхнему краю */
-    height: 100vh; /* Высота контейнера равна высоте вьюпорта */
+    height: 100%; /* Высота контейнера равна высоте вьюпорта */
+	position: relative; /* Устанавливаем относительное положение для корректного отображения */
+    z-index: 1; /* Поднимаем контейнер над фоном */
 }
 
 .music-button {
@@ -40,23 +44,31 @@
     align-items: center;
 }
 
-.background {
-  background-image: url(star.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: scroll;
+.scroll-content {
+	background-color: rgba(255, 255, 255, 0.8); /* Подложка для скроллирования */
+    color: black; /* Цвет текста */
+    padding: 20px; /* Отступы контенту */
+    box-sizing: border-box; /* Учитываем паддинг и бордеры в ширине */
+    width: 100%; /* Задаем ширину 100% */
+    min-height: 150vh; /* Минимальная высота для прокрутки */
+	background-color: rgba(0, 255, 0, 0.3); /* Отладочный цвет */
 }
 
 @media (max-width: 768px) {
     .music-button {
-        width: 30pt;
-        height: 30pt;
+        height: 50px; /* Определяем высоту для мобильных устройств */
+        width: 50px; /* Определяем ширину для мобильных устройств */
     }
 }
 
+@media (max-width: 480px) {
+    .music-button {
+        height: 40px; /* Определяем высоту для маленьких экранов */
+        width: 40px; /* Определяем ширину для маленьких экранов */
+    }
+}
 
 div {
   text-align: center;
 }
-
 
