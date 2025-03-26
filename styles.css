@@ -39,7 +39,9 @@
 .music-button {
     padding: 0;
     position: absolute;
-    left: 50%; 
+    display: block; /* Делаем элемент блочным */
+    margin-left: auto; /* Устанавливаем левый отступ автоматически */
+    margin-right: auto; /* Устанавливаем правый отступ автоматически */
     margin-top: 20px;
     cursor: pointer; 
     height: 45pt;
