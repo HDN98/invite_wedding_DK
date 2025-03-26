@@ -20,18 +20,26 @@
 	background-size: 100% 50%; /* Масштабирует изображение, чтобы заполнить весь фон */
 	background-repeat: no-repeat;
 	background-position: center top;
+	display: flex; /* Включаем Flexbox */
+    	flex-direction: column; /* Выстраиваем элементы по колонке */
+    	align-items: center; /* Центрируем горизонтально */
+    	justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
 }
-
-.container {
-    display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
-    height: 100%; /* Высота контейнера равна высоте вьюпорта */
-	position: relative; /* Устанавливаем относительное положение для корректного отображения */
-    z-index: 1; /* Поднимаем контейнер над фоном */
+.our-photo {
+    margin-top: 40vh;
+    position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
+    max-width: 80%;
+    display: block; /* Делаем элемент блочным */
+    margin-left: auto; /* Устанавливаем левый отступ автоматически */
+    margin-right: auto; /* Устанавливаем правый отступ автоматически */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение было над фоном */
 }
 
 .music-button {
     padding: 0;
+    position: absolute;
+    left: 50%; 
     margin-top: 20px;
     cursor: pointer; 
     height: 45pt;
@@ -45,13 +53,13 @@
 }
 
 .scroll-content {
-	background-color: rgba(255, 255, 255, 0.8); /* Подложка для скроллирования */
+    background-color: rgba(255, 255, 255, 0.8); /* Подложка для скроллирования */
     color: black; /* Цвет текста */
     padding: 20px; /* Отступы контенту */
     box-sizing: border-box; /* Учитываем паддинг и бордеры в ширине */
     width: 100%; /* Задаем ширину 100% */
     min-height: 150vh; /* Минимальная высота для прокрутки */
-	background-color: rgba(0, 255, 0, 0.3); /* Отладочный цвет */
+    background-color: rgba(0, 255, 0, 0.3); /* Отладочный цвет */
 }
 
 @media (max-width: 768px) {
