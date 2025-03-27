@@ -140,6 +140,11 @@
 		margin-top: 12vh;
 		width: 50vw;
 	}
+	.scrollDown {
+		margin-top: 48vh;
+		width: 15vw;
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -163,6 +168,10 @@
 	.name {
 		margin-top: 12vh;
 		width: 50vw;
+	}
+	.scrollDown {
+		margin-top: 48vh;
+		width: 15vw;
 	}
 }
 
