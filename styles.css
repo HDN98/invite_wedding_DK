@@ -161,7 +161,7 @@
 		background-size: 100% 70%; /* Масштабирует изображение, чтобы заполнить весь фон */
 	}
 	.date {
-		margin-top: 30vh;
+		margin-top: 32vh;
 		width: 25vw;
 	}
 	.name {
@@ -174,7 +174,7 @@
 	}
 	.text1 {
 		margin-top: 7vh;
-		width: 80vw;
+		width: 85vw;
 	}
 
 }
@@ -194,7 +194,7 @@
 		background-size: 100% 70%; /* Масштабирует изображение, чтобы заполнить весь фон */
 	}
 	.date {
-		margin-top: 30vh;
+		margin-top: 32vh;
 		width: 25vw;
 	}
 	.name {
@@ -207,7 +207,7 @@
 	}
 	.text1 {
 		margin-top: 7vh;
-		width: 80vw;
+		width: 85vw;
 	}
 }
 
