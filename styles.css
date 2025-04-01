@@ -25,6 +25,7 @@
     align-items: center; /* Центрируем горизонтально */
     justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .name {
