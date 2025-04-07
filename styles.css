@@ -154,6 +154,8 @@
 	display: flex;
 	justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
+		overflow-x: hidden;
+	overflow-y: hidden;
 	
 }
 
@@ -162,7 +164,8 @@
     position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
     height: auto; /* Автоматическая высота для сохранения пропорций */
     z-index: 1; /* Устанавливаем z-index, чтобы изображение было над фоном */
-	overflow-x: hidden;
+		overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .heart {
@@ -185,7 +188,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.music-button {
 		height: 50px; /* Определяем высоту для мобильных устройств */
 		width: 50px; /* Определяем ширину для мобильных устройств */
@@ -214,6 +217,16 @@
 	.text1 {
 		margin-top: 7vh;
 		width: 85vw;
+	}
+	.container-heart {
+		width: 900px;    /* Задайте фиксированную ширину для изображения */
+		height: 500px;	
+	}
+	.heart {
+		width: 30px; /* Установите размер сердца */
+		height: auto;
+		top: 240px; /* Измените это значение для нужной высоты */
+		left: 940px; /* Измените это значение для нужной ширины */
 	}
 
 }
@@ -248,6 +261,17 @@
 		margin-top: 7vh;
 		width: 85vw;
 	}
+	.container-heart {
+		width: 900px;    /* Задайте фиксированную ширину для изображения */
+		height: 500px;	
+	}
+	.heart {
+		width: 30px; /* Установите размер сердца */
+		height: auto;
+		top: 240px; /* Измените это значение для нужной высоты */
+		left: 940px; /* Измените это значение для нужной ширины */
+	}
+	
 }
 
 
