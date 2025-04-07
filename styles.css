@@ -146,16 +146,43 @@
 	overflow-x: hidden;
 }
 
+.container-heart {
+    position: relative;
+	margin-top: 30vh;
+	width: 1680px;    /* Задайте фиксированную ширину для изображения */
+    height: 600px;
+	display: flex;
+	justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+	
+}
+
 .calendar {
-	margin-top: 40vh;
 	width: 25%;
     position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
-    display: block; /* Делаем элемент блочным */
-    margin-left: auto; /* Устанавливаем левый отступ автоматически */
-    margin-right: auto; /* Устанавливаем правый отступ автоматически */
     height: auto; /* Автоматическая высота для сохранения пропорций */
     z-index: 1; /* Устанавливаем z-index, чтобы изображение было над фоном */
 	overflow-x: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 50px; /* Установите размер сердца */
+    height: auto; /* Авто-высота для пропорций */
+    /* Используйте vw и vh для точного позиционирования */
+    top: 240px; /* Измените это значение для нужной высоты */
+    left: 940px; /* Измените это значение для нужной ширины */
+    transform: translate(-50%, -50%); /* Центрирование относительно указанной точки */
+    animation: beat 1s infinite; /* Анимация */
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2); /* Увеличение */
+    }
 }
 
 @media (max-width: 768px) {
