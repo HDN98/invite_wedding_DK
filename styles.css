@@ -146,6 +146,18 @@
 	overflow-x: hidden;
 }
 
+.calendar {
+	margin-top: 40vh;
+	width: 25%;
+    position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
+    display: block; /* Делаем элемент блочным */
+    margin-left: auto; /* Устанавливаем левый отступ автоматически */
+    margin-right: auto; /* Устанавливаем правый отступ автоматически */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение было над фоном */
+	overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
 	.music-button {
 		height: 50px; /* Определяем высоту для мобильных устройств */
