@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+	<!-- Блок вступление -->
 	<div class="background"> <!-- Используем класс background здесь -->
         <audio id="sound"><source src="music.mp3" type="audio/mp3"></audio>
 		
@@ -23,9 +25,42 @@
 		<div class="photo">
 			<img class="our-photo" src="picture/ourPhoto2.png" alt="Overlay Image"> </img>
 		</div>
-		
-		
+
     </div>
+	
+	<!-- Блок с календарем -->
+	<div class="scroll-content"> <!-- Дополнительный контент для прокрутки -->
+		<img class="one-day-text" src="picture/text1.svg" alt="Overlay Image"> </img>
+		<div class="container-heart">
+			<img class="calendar" src="picture/calendar.svg" alt="Overlay Image"> </img>
+			<img src="picture/heart.svg" alt="Сердце" class="heart"> <!-- Замените на путь к изображению сердца -->
+		</div>
+		<img class="no-officiall-text" src="picture/text2.svg" alt="Overlay Image"> </img>
+    </div>
+	
+	<!-- Блок с локацией -->
+	<div class="location">
+		<div class="location-text-container">
+			<img class="location-text" src="picture/locationText.svg" alt="Overlay Image"> </img>
+		</div>
+		<div class="location-container">
+			<div class="image-location-container">
+				<img class="image-location" src="picture/hotimEdim.svg" alt="Overlay Image"> </img>
+			</div>
+			<div class="navigation-container">
+				<div class="where-location">
+					<img class="imgWhereLocation" src="picture/whereLocation.svg" alt="Overlay Image"> </img>
+				</div>
+				<div class="google-navigation-container">
+					<div class="google-navigation-div" style="position:relative;overflow:hidden;">
+						<a href="https://yandex.ru/maps/172/ufa/?utm_medium=mapframe&utm_source=maps" style="color:#A9A9A9;font-size:12px;position:absolute;top:0px;">Уфа</a>
+						<a href="https://yandex.ru/maps/11111/republic-of-bashkortostan/house/m_5_ural_1460_y_kilometr_1/YUwYfgFjT0UDQFtufXp3dH5mYQ==/?ll=55.863839%2C54.664990&utm_medium=mapframe&utm_source=maps&z=19.52" style="color:#A9A9A9;font-size:12px;position:absolute;top:14px;">М-5 Урал, 1460-й километр, 1 — Яндекс Карты</a>
+						<iframe class="google-navigation" src="https://yandex.ru/map-widget/v1/?um=constructor%3A418821f7a11395f899c6886fdc233f869b40b5abbd6df06b8b0ec5ae57626d01&amp;source=constructor" width="718" height="422" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
     <script src="script.js"></script>
 </body>
