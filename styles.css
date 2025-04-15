@@ -3,8 +3,8 @@
     color: #fff;
     margin: 0;
     padding: 0;
-	hight: 100%;
-    overflow: auto;
+	height: 100%;
+	overflow: auto;
     justify-content: center; 
     align-items: flex-start; 
     height: auto; 
@@ -117,13 +117,12 @@
 	overflow-x: hidden;
 }
 
-
 .scroll-content {
 	background-image: url('picture/page21.png');
-	background-size: 100% 100%; /* Масштабирует изображение, чтобы заполнить весь фон */
-	background-repeat: no-repeat;
+	background-size: 100% auto;/* Масштабирует изображение, чтобы заполнить весь фон */
+	background-repeat: repeat;
 	background-position: center top;
-	height: 110vh;
+	height: 100vh;
 	width: 100%;
 	position: relative;
 	display: flex; /* Включаем Flexbox */
@@ -131,13 +130,14 @@
     align-items: center; /* Центрируем горизонтально */
     justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
 	overflow-x: hidden;
+	justify-content: space-between;
 
 }
 
 .one-day {
 	position: relative;
 	width: 100%;    /* Задайте фиксированную ширину для изображения */
-    height: 30%;
+    height: 20%;
 	display: flex;
 	justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
@@ -146,7 +146,7 @@
 }
 
 .text1 {
-	width: 35%;
+	width: 30%;
     position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
     display: block; /* Делаем элемент блочным */
     margin-left: auto; /* Устанавливаем левый отступ автоматически */
@@ -159,7 +159,7 @@
 .container-heart {
     position: relative;
 	width: 100%;    /* Задайте фиксированную ширину для изображения */
-    height: 30%;
+    height: 74%;
 	display: flex;
 	justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
@@ -186,6 +186,95 @@
     left: 56%; /* Измените это значение для нужной ширины */
     transform: translate(-50%, -50%); /* Центрирование относительно указанной точки */
     animation: beat 1s infinite; /* Анимация */
+}
+
+.text-2 {
+    position: relative;
+	width: 100%;    /* Задайте фиксированную ширину для изображения */
+    height: 35%;
+	display: flex;
+	justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+
+.text2 {
+	width: 35%;
+    position: absolute; /* Позволяет позиционировать изображение относительно контейнера */
+    display: block; /* Делаем элемент блочным */
+    margin-left: auto; /* Устанавливаем левый отступ автоматически */
+    margin-right: auto; /* Устанавливаем правый отступ автоматически */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение было над фоном */
+	overflow-x: hidden;
+}
+
+
+.location {
+	/* background-color:red; */
+	width: 100%;
+	position: relative;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.location-text-container {
+	align-self: flex-start;
+	height: auto;
+	width: 100%;
+}
+
+.location-text {
+	text-align: left;
+	padding: 40px;
+	width: 30%;
+}
+
+.location-container {
+	background-image: url('picture/backgroundLocationDesktop.svg');
+	background-size: 100% auto;/* Масштабирует изображение, чтобы заполнить весь фон */
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align: center;
+	width: 100%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.image-location-container {
+	width: 40%; /* Увеличиваем изображение на 50% */
+    height: auto; /* Высота пропорционально изменяется */
+	align-self: center;
+}
+
+.image-location {
+	width: 100%;
+}
+
+.navigation-container {
+	height: 1000px;
+	width: 30%;
+}
+
+.imgWhereLocation {
+	width: 50%; /* Увеличиваем изображение на 50% */
+    height: auto; /* Высота пропорционально изменяется */
+	align-self: center;
+}
+
+.google-navigation {
+	width: 560px;
+	height: 400px;
 }
 
 @keyframes beat {
@@ -233,7 +322,33 @@
 		width: 50px; /* Установите размер сердца */
 		top: 55%; /* Измените это значение для нужной высоты */
 		left: 56%; /* Измените это значение для нужной ширины */
-		}
+	}
+	.text2 {
+		width: 90%;
+	}
+	.text-2 {
+		height: 20%;
+	}
+	
+	.location-text {
+		padding: 20px;
+		width: 60%;
+	}
+	.location-container {
+		background-image: url('picture/backgroundLocation.svg');
+	}
+	.navigation-container {
+		height: 1000px;
+		width: 70%;
+	}
+	.imgWhereLocation {
+		width: 50%; /* Увеличиваем изображение на 50% */
+		height: auto; /* Высота пропорционально изменяется */
+	}
+	.google-navigation {
+		width: 360px;
+		height: 250px;
+	}
 
 }
 
@@ -269,10 +384,20 @@
 	.calendar {
 		width: 65%;
 	}
+	.container-heart{
+		height: 30%;
+	}
 	.heart {
 		width: 30px; /* Установите размер сердца */
 		top: 36%; /* Измените это значение для нужной высоты */
 		left: 66%; /* Измените это значение для нужной ширины */
+	}
+	.image-location-container {
+		width: 100%; /* Увеличиваем изображение на 50% */
+		height: auto; /* Высота пропорционально изменяется */
+	}
+	.image-location {
+		width: 100%;
 	}
 }
 
@@ -305,6 +430,9 @@
 	.text1 {
 		width: 85vw;
 	}
+	.container-heart{
+		height: 30%;
+	}
 	.calendar {
 		width: 65%;
 	}
@@ -315,8 +443,3 @@
 	}
 }
 
-
-
-div {
-  text-align: center;
-}
