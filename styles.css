@@ -400,6 +400,10 @@
 		width: 100%;
 	}
 
+	.scroll-content {
+		height: 100%;
+	}
+
 	.location-text {
 		padding: 20px;
 		width: 60%;
@@ -489,6 +493,10 @@
 	.google-navigation {
 		width: 360px;
 		height: 250px;
+	}
+
+	.scroll-content {
+		height: 100%;
 	}
 }
 
