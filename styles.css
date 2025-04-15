@@ -399,6 +399,26 @@
 	.image-location {
 		width: 100%;
 	}
+
+	.location-text {
+		padding: 20px;
+		width: 60%;
+	}
+	.location-container {
+		background-image: url('picture/backgroundLocation.svg');
+	}
+	.navigation-container {
+		height: 1000px;
+		width: 70%;
+	}
+	.imgWhereLocation {
+		width: 50%; /* Увеличиваем изображение на 50% */
+		height: auto; /* Высота пропорционально изменяется */
+	}
+	.google-navigation {
+		width: 360px;
+		height: 250px;
+	}
 }
 
 @media (max-width: 390px) {
@@ -440,6 +460,35 @@
 		width: 30px; /* Установите размер сердца */
 		top: 34%; /* Измените это значение для нужной высоты */
 		left: 66%; /* Измените это значение для нужной ширины */
+	}
+
+		
+	.image-location-container {
+		width: 100%; /* Увеличиваем изображение на 50% */
+		height: auto; /* Высота пропорционально изменяется */
+	}
+	.image-location {
+		width: 100%;
+	}
+	
+	.location-text {
+		padding: 20px;
+		width: 60%;
+	}
+	.location-container {
+		background-image: url('picture/backgroundLocation.svg');
+	}
+	.navigation-container {
+		height: 1000px;
+		width: 70%;
+	}
+	.imgWhereLocation {
+		width: 50%; /* Увеличиваем изображение на 50% */
+		height: auto; /* Высота пропорционально изменяется */
+	}
+	.google-navigation {
+		width: 360px;
+		height: 250px;
 	}
 }
 
