@@ -400,9 +400,6 @@
 		width: 100%;
 	}
 
-	.scroll-content {
-		height: 100%;
-	}
 
 	.location-text {
 		padding: 20px;
@@ -495,8 +492,5 @@
 		height: 250px;
 	}
 
-	.scroll-content {
-		height: 100%;
-	}
 }
 
