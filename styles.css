@@ -175,9 +175,9 @@
 
 .location-container {
 	background-image: url('picture/backgroundLocationDesktop.svg');
-	background-size: 100% auto;/* Масштабирует изображение, чтобы заполнить весь фон */
+	background-size: 100% auto;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center top; 
 	text-align: center;
 	width: 100%;
 	display: inline-flex; /* Включаем Flexbox */
@@ -199,7 +199,7 @@
 }
 
 .navigation-container {
-	height: 1000px;
+	padding-bottom: 150px;
 	width: 30%;
 }
 
@@ -212,6 +212,83 @@
 .google-navigation {
 	width: 560px;
 	height: 400px;
+}
+
+.time {
+	background-image: url('picture/timeDesktop.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align: center; 
+	width: 100%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.time1 {
+	margin-top: 440px;
+	margin-left: 270px; 
+	align-self: flex-start;
+	transform: translateX(-700%);
+	transition: transform 1.5s ease;
+}
+
+
+.time2{
+	margin-top: 50px;
+	margin-right: 280px;
+	align-self: flex-end;
+	transform: translateX(700%);
+	transition: transform 1.5s ease;
+}
+
+.time3 {
+	margin-top: 30px;
+	margin-left: 270px;
+	align-self: flex-start;
+	transform: translateX(-700%);
+	transition: transform 1.5s ease;
+}
+
+.time4{
+	margin-top: -10px;
+	margin-right: 280px;	
+	align-self: flex-end;
+	transform: translateX(700%);
+	transition: transform 1.5s ease;
+}
+
+.time1.show {
+	transform: translateX(0);
+}
+
+.time2.show {
+	transform: translateX(0);
+}
+
+.time3.show {
+	transform: translateX(0);
+}
+
+.time4.show {
+	transform: translateX(0);
+}
+
+.time1-text{
+	width:230%;
+}
+.time2-text{
+	width:230%;
+}
+.time3-text{
+	width:230%;
+}
+.time4-text{
+	width:230%;
 }
 
 
@@ -260,7 +337,7 @@
 		background-image: url('picture/backgroundLocation.svg');
 	}
 	.navigation-container {
-		height: 1000px;
+		height: 200px;
 		width: 70%;
 	}
 	.imgWhereLocation {
@@ -271,6 +348,35 @@
 		width: 360px;
 		height: 250px;
 	}
+	.time1 {
+		margin-top: 105px;
+		margin-left: 55px; 
+	}
+	.time2{
+		margin-top: 0px;
+		margin-right: 30px;
+	}
+	.time3 {
+		margin-top: -10px;
+		margin-left: 40px;	
+	}
+	.time4{
+		margin-top: -20px;
+		margin-right: 28px;	
+	}
+	.time1-text{
+		width:80%;
+	}
+	.time2-text{
+		width:80%;
+	}
+	.time3-text{
+		width:80%;
+	}
+	.time4-text{
+		width:80%;
+	}
+	
 }
 
 @media (max-width: 480px) {
@@ -324,7 +430,7 @@
 		background-image: url('picture/backgroundLocation.svg');
 	}
 	.navigation-container {
-		height: 1000px;
+		height: 250px;
 		width: 70%;
 	}
 	.imgWhereLocation {
@@ -335,7 +441,34 @@
 		width: 360px;
 		height: 250px;
 	}
-}
+	.time1 {
+		margin-top: 115px;
+		margin-left: 52px; 
+	}
+	.time2{
+		margin-top: 5px;
+		margin-right: 30px;
+	}
+	.time3 {
+		margin-top: -10px;
+		margin-left: 52px; 
+	}
+	.time4{
+		margin-top: -20px;
+		margin-right: 30px;
+	}
+	.time1-text{
+		width:80%;
+	}
+	.time2-text{
+		width:80%;
+	}
+	.time3-text{
+		width:80%;
+	}
+	.time4-text{
+		width:80%;
+	}
 
 @media (max-width: 390px) {
 	.music-button {
@@ -389,7 +522,7 @@
 		background-image: url('picture/backgroundLocation.svg');
 	}
 	.navigation-container {
-		height: 1000px;
+		height: 200px;
 		width: 70%;
 	}
 	.imgWhereLocation {
@@ -399,6 +532,34 @@
 	.google-navigation {
 		width: 360px;
 		height: 250px;
+	}
+	.time1 {
+		margin-top: 105px;
+		margin-left: 55px; 
+	}
+	.time2{
+		margin-top: 0px;
+		margin-right: 30px;
+	}
+	.time3 {
+		margin-top: -10px;
+		margin-left: 40px;	
+	}
+	.time4{
+		margin-top: -20px;
+		margin-right: 28px;	
+	}
+	.time1-text{
+		width:80%;
+	}
+	.time2-text{
+		width:80%;
+	}
+	.time3-text{
+		width:80%;
+	}
+	.time4-text{
+		width:80%;
 	}
 }
 
