@@ -174,7 +174,7 @@
 
 .location-container {
 	background-image: url('picture/backgroundLocationDesktop.svg');
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center top; 
 	text-align: center;
@@ -347,33 +347,36 @@
 		width: 360px;
 		height: 250px;
 	}
+	.time {
+		background-image: url('picture/timeTest.svg');
+	}
 	.time1 {
-		margin-top: 105px;
-		margin-left: 55px; 
+		margin-top: 160px;
+		margin-left: 65px; 
 	}
 	.time2{
-		margin-top: 0px;
-		margin-right: 30px;
+		margin-top: -10px;
+		margin-right: 85px;
 	}
 	.time3 {
-		margin-top: -10px;
-		margin-left: 40px;	
+		margin-top: 5px;
+		margin-left: 65px;	
 	}
 	.time4{
-		margin-top: -20px;
-		margin-right: 28px;	
+		margin-top: 10px;
+		margin-right: 85px;	
 	}
 	.time1-text{
-		width:80%;
+		width:170%;
 	}
 	.time2-text{
-		width:80%;
+		width:170%;
 	}
 	.time3-text{
-		width:80%;
+		width:170%;
 	}
 	.time4-text{
-		width:80%;
+		width:170%;
 	}
 	
 }
@@ -423,7 +426,7 @@
 	}
 	.location-text {
 		padding: 20px;
-		width: 60%;
+		width: 75%;
 	}
 	.location-container {
 		background-image: url('picture/backgroundLocation.svg');
@@ -440,34 +443,38 @@
 		width: 360px;
 		height: 250px;
 	}
+	.time {
+		background-image: url('picture/timeTest.svg');
+	}
 	.time1 {
-		margin-top: 115px;
-		margin-left: 52px; 
+		margin-top: 160px;
+		margin-left: 65px; 
 	}
 	.time2{
-		margin-top: 5px;
-		margin-right: 30px;
+		margin-top: -10px;
+		margin-right: 85px;
 	}
 	.time3 {
-		margin-top: -10px;
-		margin-left: 52px; 
+		margin-top: 5px;
+		margin-left: 65px;	
 	}
 	.time4{
-		margin-top: -20px;
-		margin-right: 30px;
+		margin-top: 10px;
+		margin-right: 85px;	
 	}
 	.time1-text{
-		width:80%;
+		width:170%;
 	}
 	.time2-text{
-		width:80%;
+		width:170%;
 	}
 	.time3-text{
-		width:80%;
+		width:170%;
 	}
 	.time4-text{
-		width:80%;
+		width:170%;
 	}
+}
 
 @media (max-width: 390px) {
 	.music-button {
@@ -515,7 +522,7 @@
 	
 	.location-text {
 		padding: 20px;
-		width: 60%;
+		width: 75%;
 	}
 	.location-container {
 		background-image: url('picture/backgroundLocation.svg');
@@ -529,36 +536,39 @@
 		height: auto; /* Высота пропорционально изменяется */
 	}
 	.google-navigation {
-		width: 360px;
-		height: 250px;
+		width: 230px;
+		height: 230px;
+	}
+	.time {
+		background-image: url('picture/timeTest.svg');
 	}
 	.time1 {
-		margin-top: 105px;
+		margin-top: 145px;
 		margin-left: 55px; 
 	}
 	.time2{
-		margin-top: 0px;
-		margin-right: 30px;
+		margin-top: -5px;
+		margin-right: 65px;
 	}
 	.time3 {
-		margin-top: -10px;
-		margin-left: 40px;	
+		margin-top: 5px;
+		margin-left: 55px;	
 	}
 	.time4{
-		margin-top: -20px;
-		margin-right: 28px;	
+		margin-top: 10px;
+		margin-right: 65px;	
 	}
 	.time1-text{
-		width:80%;
+		width:150%;
 	}
 	.time2-text{
-		width:80%;
+		width:150%;
 	}
 	.time3-text{
-		width:80%;
+		width:150%;
 	}
 	.time4-text{
-		width:80%;
+		width:150%;
 	}
 }
 
