@@ -447,32 +447,32 @@
 		background-image: url('picture/timeTest.svg');
 	}
 	.time1 {
-		margin-top: 160px;
-		margin-left: 65px; 
+		margin-top: 40%;
+		margin-left: 10%; 
 	}
 	.time2{
-		margin-top: -10px;
-		margin-right: 85px;
+		margin-top: -5%;
+		margin-right: 25%;
 	}
 	.time3 {
-		margin-top: 5px;
-		margin-left: 65px;	
+		margin-top: 3%;
+		margin-left: 10%;	
 	}
 	.time4{
-		margin-top: 10px;
-		margin-right: 85px;	
+		margin-top: 0%;
+		margin-right: 25%;	
 	}
 	.time1-text{
-		width:170%;
+		width:180%;
 	}
 	.time2-text{
-		width:170%;
+		width:180%;
 	}
 	.time3-text{
-		width:170%;
+		width:180%;
 	}
 	.time4-text{
-		width:170%;
+		width:180%;
 	}
 }
 
