@@ -366,17 +366,47 @@
 	.time {
 		background-image: url('picture/timePhone.svg');
 	}
+	.time1{
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time1BlockPhone.svg');
+	}
+	.time2{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time2BlockPhone.svg');
+	}
+	.time3{
+		background-size: 100% auto;
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time3BlockPhone.svg');
+	}
+	.time4{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time4BlockPhone.svg');
+	}
+
 	.time1-text{
-		width:60%;
+		margin-top: 15%;
+		width:80%;
 	}
 	.time2-text{
-		width:60%;
+		margin-top: 10%;
+		margin-left: 15%;
+		width:65%;
 	}
 	.time3-text{
+		margin-top: 10%;
 		width:60%;
 	}
 	.time4-text{
-		width:60%;
+		margin-top: 12%;
+		margin-left: 15%;
+		width:65%;
 	}
 }
 
@@ -445,17 +475,47 @@
 	.time {
 		background-image: url('picture/timePhone.svg');
 	}
+	.time1{
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time1BlockPhone.svg');
+	}
+	.time2{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time2BlockPhone.svg');
+	}
+	.time3{
+		background-size: 100% auto;
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time3BlockPhone.svg');
+	}
+	.time4{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time4BlockPhone.svg');
+	}
+
 	.time1-text{
-		width:60%;
+		margin-top: 15%;
+		width:80%;
 	}
 	.time2-text{
-		width:60%;
+		margin-top: 10%;
+		margin-left: 15%;
+		width:65%;
 	}
 	.time3-text{
+		margin-top: 10%;
 		width:60%;
 	}
 	.time4-text{
-		width:60%;
+		margin-top: 12%;
+		margin-left: 15%;
+		width:65%;
 	}
 }
 
@@ -525,17 +585,47 @@
 	.time {
 		background-image: url('picture/timePhone.svg');
 	}
+	.time1{
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time1BlockPhone.svg');
+	}
+	.time2{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time2BlockPhone.svg');
+	}
+	.time3{
+		background-size: 100% auto;
+		width: 60%;
+		margin-left: 5%;
+		background-image: url('picture/time3BlockPhone.svg');
+	}
+	.time4{
+		background-size: 100% auto;
+		width: 60%;
+		margin-right: 5%;
+		background-image: url('picture/time4BlockPhone.svg');
+	}
+
 	.time1-text{
-		width:60%;
+		margin-top: 15%;
+		width:80%;
 	}
 	.time2-text{
-		width:60%;
+		margin-top: 10%;
+		margin-left: 15%;
+		width:65%;
 	}
 	.time3-text{
+		margin-top: 10%;
 		width:60%;
 	}
 	.time4-text{
-		width:60%;
+		margin-top: 12%;
+		margin-left: 15%;
+		width:65%;
 	}
 }
 
