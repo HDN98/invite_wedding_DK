@@ -366,38 +366,6 @@
 		width: 360px;
 		height: 250px;
 	}
-	.time {
-		background-image: url('picture/timeTest.svg');
-	}
-	.time1 {
-		margin-top: 160px;
-		margin-left: 65px; 
-	}
-	.time2{
-		margin-top: -10px;
-		margin-right: 85px;
-	}
-	.time3 {
-		margin-top: 5px;
-		margin-left: 65px;	
-	}
-	.time4{
-		margin-top: 10px;
-		margin-right: 85px;	
-	}
-	.time1-text{
-		width:170%;
-	}
-	.time2-text{
-		width:170%;
-	}
-	.time3-text{
-		width:170%;
-	}
-	.time4-text{
-		width:170%;
-	}
-	
 }
 
 @media (max-width: 480px) {
@@ -461,37 +429,6 @@
 	.google-navigation {
 		width: 360px;
 		height: 250px;
-	}
-	.time {
-		background-image: url('picture/timeTest.svg');
-	}
-	.time1 {
-		margin-top: 40%;
-		margin-left: 10%; 
-	}
-	.time2{
-		margin-top: -5%;
-		margin-right: 25%;
-	}
-	.time3 {
-		margin-top: 3%;
-		margin-left: 10%;	
-	}
-	.time4{
-		margin-top: 0%;
-		margin-right: 25%;	
-	}
-	.time1-text{
-		width:180%;
-	}
-	.time2-text{
-		width:180%;
-	}
-	.time3-text{
-		width:180%;
-	}
-	.time4-text{
-		width:180%;
 	}
 }
 
@@ -557,37 +494,6 @@
 	.google-navigation {
 		width: 230px;
 		height: 230px;
-	}
-	.time {
-		background-image: url('picture/timeTest.svg');
-	}
-	.time1 {
-		margin-top: 145px;
-		margin-left: 55px; 
-	}
-	.time2{
-		margin-top: -5px;
-		margin-right: 65px;
-	}
-	.time3 {
-		margin-top: 5px;
-		margin-left: 55px;	
-	}
-	.time4{
-		margin-top: 10px;
-		margin-right: 65px;	
-	}
-	.time1-text{
-		width:150%;
-	}
-	.time2-text{
-		width:150%;
-	}
-	.time3-text{
-		width:150%;
-	}
-	.time4-text{
-		width:150%;
 	}
 }
 
