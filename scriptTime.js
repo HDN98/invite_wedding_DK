@@ -1,7 +1,7 @@
-const times1 = document.querySelectorAll('.time1');
-const times2 = document.querySelectorAll('.time2');
-const times3 = document.querySelectorAll('.time3');
-const times4 = document.querySelectorAll('.time4');
+const times1 = document.querySelectorAll('.time1-text');
+const times2 = document.querySelectorAll('.time2-text');
+const times3 = document.querySelectorAll('.time3-text');
+const times4 = document.querySelectorAll('.time4-text');
 
 const checkBoxes = () => {
 	const triger = (window.innerHeight);
