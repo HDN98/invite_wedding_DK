@@ -228,67 +228,86 @@
 	overflow-y: hidden;
 }
 
-.time1 {
-	margin-top: 440px;
-	margin-left: 270px; 
+.time1{
+	margin-top: 20%;
+	width: 50%;
 	align-self: flex-start;
-	transform: translateX(-700%);
-	transition: transform 1.5s ease;
+	background-image: url('picture/time1Block.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
-
 
 .time2{
-	margin-top: 50px;
-	margin-right: 280px;
+	width: 50%;
 	align-self: flex-end;
-	transform: translateX(700%);
-	transition: transform 1.5s ease;
+	background-image: url('picture/time2Block.svg');
+	background-size: 70% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
-.time3 {
-	margin-top: 30px;
-	margin-left: 270px;
+.time3{
+	width: 60%;
 	align-self: flex-start;
-	transform: translateX(-700%);
-	transition: transform 1.5s ease;
+	background-image: url('picture/time3Block.svg');
+	background-size: 60% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 .time4{
-	margin-top: -10px;
-	margin-right: 280px;	
+	width: 60%;
 	align-self: flex-end;
-	transform: translateX(700%);
-	transition: transform 1.5s ease;
+	background-image: url('picture/time4Block.svg');
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
-.time1.show {
+.time1-text.show {
 	transform: translateX(0);
 }
 
-.time2.show {
+.time2-text.show {
 	transform: translateX(0);
 }
 
-.time3.show {
+.time3-text.show {
 	transform: translateX(0);
 }
 
-.time4.show {
+.time4-text.show {
 	transform: translateX(0);
 }
 
 .time1-text{
-	width:230%;
+	margin-top: 8%;
+	width:40%;
+	transform: translateX(-700%);
+	transition: transform 1.5s ease;
 }
 .time2-text{
-	width:230%;
+	margin-top: 8%;
+	width:40%;
+	transform: translateX(700%);
+	transition: transform 1.5s ease;
 }
 .time3-text{
-	width:230%;
+	margin-right: 20%;
+	margin-top: 6%;
+	width:26%;
+	transform: translateX(-700%);
+	transition: transform 1.5s ease;
 }
 .time4-text{
-	width:230%;
+	margin-left: 20%;
+	margin-top: 7%;
+	width:35%;
+	transform: translateX(700%);
+	transition: transform 1.5s ease;
 }
+
 
 
 
