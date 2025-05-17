@@ -308,9 +308,6 @@
 	transition: transform 1.5s ease;
 }
 
-
-
-
 @media (max-width: 968px) {
 	.music-button {
 		height: 50px; /* Определяем высоту для мобильных устройств */
@@ -365,6 +362,21 @@
 	.google-navigation {
 		width: 360px;
 		height: 250px;
+	}
+	.time {
+		background-image: url('picture/timePhone.svg');
+	}
+	.time1-text{
+		width:60%;
+	}
+	.time2-text{
+		width:60%;
+	}
+	.time3-text{
+		width:60%;
+	}
+	.time4-text{
+		width:60%;
 	}
 }
 
@@ -430,6 +442,21 @@
 		width: 360px;
 		height: 250px;
 	}
+	.time {
+		background-image: url('picture/timePhone.svg');
+	}
+	.time1-text{
+		width:60%;
+	}
+	.time2-text{
+		width:60%;
+	}
+	.time3-text{
+		width:60%;
+	}
+	.time4-text{
+		width:60%;
+	}
 }
 
 @media (max-width: 390px) {
@@ -494,6 +521,21 @@
 	.google-navigation {
 		width: 230px;
 		height: 230px;
+	}
+	.time {
+		background-image: url('picture/timePhone.svg');
+	}
+	.time1-text{
+		width:60%;
+	}
+	.time2-text{
+		width:60%;
+	}
+	.time3-text{
+		width:60%;
+	}
+	.time4-text{
+		width:60%;
 	}
 }
 
