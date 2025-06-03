@@ -1,4 +1,4 @@
- const phoneNumber = '79876270460'; // замените на свой номер
+ const phoneNumber = '79373084282'; // замените на свой номер
   
   // Обработчик клика
   document.getElementById('aigulButton').addEventListener('click', function() {
