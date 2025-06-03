@@ -233,7 +233,7 @@
 	width: 50%;
 	align-self: flex-start;
 	background-image: url('picture/time1Block.svg');
-	background-size: 100% auto;
+	background-size: 60% auto;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -242,7 +242,7 @@
 	width: 50%;
 	align-self: flex-end;
 	background-image: url('picture/time2Block.svg');
-	background-size: 70% auto;
+	background-size: 65% auto;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -289,7 +289,8 @@
 }
 .time2-text{
 	margin-top: 8%;
-	width:40%;
+	margin-left: 10%;
+	width:38%;
 	transform: translateX(700%);
 	transition: transform 1.5s ease;
 }
@@ -307,6 +308,196 @@
 	transform: translateX(700%);
 	transition: transform 1.5s ease;
 }
+
+.dress-code-block{
+	margin-top: 100px;
+	text-align: center; 
+	width: 100%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.dress-code-text-block{
+	background-image: url('picture/backgroundDressCode.svg');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align: center; 
+	width: 100%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.dress-code-text1{
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.dress-code{
+	width: 25%;
+}
+
+.dress-code-text2{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.dress-code-big-text{
+	width: 35%;
+}
+
+.color-block{
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.color{
+	width: 25%;
+}
+
+.dress-code-text3{
+	width: 100%;
+}
+
+.dress-code-small-text{
+	padding-top: 2%;
+	width: 50%;
+	padding-bottom: 2%;
+}
+
+.details-block-obertka{
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.details-block{
+	background-color: #003324;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 52%;
+	margin-bottom: 2%;
+}
+
+.titleDetails{
+	align-self: flex-start;
+	margin-left: 5%;
+	margin-top: 2%;
+	width: 100%;
+}
+
+.details{
+	width: 75%;
+}
+
+.details-text-block{
+	margin-top: 2%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 80%;
+}
+
+.details-text{
+	width: 75%;
+}
+
+.aigul-block{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 80%;
+}
+
+.aigul-text{
+	width: 40%;
+}
+
+.aigulButton{
+  background: none;
+  border: none;
+  width: 40%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.aigulButton img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.podarok-block{
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 80%;
+}
+
+.podarok-text{
+	width: 80%;
+	margin-bottom: 2%;
+}
+
+.baby-block{
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 80%;
+}
+
+.baby-text{
+	width: 80%;
+	margin-bottom: 2%;
+}
+
 
 @media (max-width: 968px) {
 	.music-button {
@@ -367,27 +558,24 @@
 		background-image: url('picture/timePhone.svg');
 	}
 	.time1{
+		background-size: 90% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time1BlockPhone.svg');
 	}
 	.time2{
 		background-size: 100% auto;
 		width: 60%;
 		margin-right: 5%;
-		background-image: url('picture/time2BlockPhone.svg');
 	}
 	.time3{
 		background-size: 100% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time3BlockPhone.svg');
 	}
 	.time4{
 		background-size: 100% auto;
-		width: 60%;
+		width: 65%;
 		margin-right: 5%;
-		background-image: url('picture/time4BlockPhone.svg');
 	}
 
 	.time1-text{
@@ -406,7 +594,63 @@
 	.time4-text{
 		margin-top: 12%;
 		margin-left: 15%;
-		width:65%;
+		width:60%;
+	}
+	.dress-code-block{
+		margin-top: 50px;
+	}
+	.dress-code{
+		width: 50%;
+	}
+	.dress-code-big-text{
+		width: 70%;
+	}
+	.color{
+		width: 65%;
+	}
+		.dress-code-small-text{
+		width: 85%;
+	}
+	
+	.details-block{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	
+	.details{
+		width: 85%;
+	}
+	
+	.details-text-block{
+		width: 100%;
+	}
+	
+	.details-text{
+		width: 80%;
+	}
+	
+	.aigul-block{
+		width: 100%;
+	}
+
+	.aigul-text{
+		width: 45%;
+	}
+
+	.aigulButton{
+	  width: 50%;
+	}
+
+	.podarok-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
+	}
+
+	.baby-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
 	}
 }
 
@@ -476,27 +720,24 @@
 		background-image: url('picture/timePhone.svg');
 	}
 	.time1{
+		background-size: 90% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time1BlockPhone.svg');
 	}
 	.time2{
 		background-size: 100% auto;
 		width: 60%;
 		margin-right: 5%;
-		background-image: url('picture/time2BlockPhone.svg');
 	}
 	.time3{
 		background-size: 100% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time3BlockPhone.svg');
 	}
 	.time4{
 		background-size: 100% auto;
-		width: 60%;
+		width: 65%;
 		margin-right: 5%;
-		background-image: url('picture/time4BlockPhone.svg');
 	}
 
 	.time1-text{
@@ -515,7 +756,63 @@
 	.time4-text{
 		margin-top: 12%;
 		margin-left: 15%;
-		width:65%;
+		width:60%;
+	}
+	.dress-code-block{
+		margin-top: 50px;
+	}
+	.dress-code{
+		width: 50%;
+	}
+	.dress-code-big-text{
+		width: 70%;
+	}
+	.color{
+		width: 65%;
+	}
+		.dress-code-small-text{
+		width: 85%;
+	}
+	
+	.details-block{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	
+	.details{
+		width: 85%;
+	}
+	
+	.details-text-block{
+		width: 100%;
+	}
+	
+	.details-text{
+		width: 80%;
+	}
+	
+	.aigul-block{
+		width: 100%;
+	}
+
+	.aigul-text{
+		width: 45%;
+	}
+
+	.aigulButton{
+	  width: 50%;
+	}
+
+	.podarok-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
+	}
+
+	.baby-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
 	}
 }
 
@@ -586,27 +883,24 @@
 		background-image: url('picture/timePhone.svg');
 	}
 	.time1{
+		background-size: 90% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time1BlockPhone.svg');
 	}
 	.time2{
 		background-size: 100% auto;
 		width: 60%;
 		margin-right: 5%;
-		background-image: url('picture/time2BlockPhone.svg');
 	}
 	.time3{
 		background-size: 100% auto;
 		width: 60%;
 		margin-left: 5%;
-		background-image: url('picture/time3BlockPhone.svg');
 	}
 	.time4{
 		background-size: 100% auto;
-		width: 60%;
+		width: 65%;
 		margin-right: 5%;
-		background-image: url('picture/time4BlockPhone.svg');
 	}
 
 	.time1-text{
@@ -625,7 +919,68 @@
 	.time4-text{
 		margin-top: 12%;
 		margin-left: 15%;
-		width:65%;
+		width:60%;
 	}
+	.dress-code-block{
+		margin-top: 50px;
+	}
+	.dress-code{
+		width: 50%;
+	}
+	.dress-code-big-text{
+		width: 70%;
+	}
+	
+	.color{
+		width: 65%;
+	}
+	
+	.dress-code-small-text{
+		width: 85%;
+	}
+	
+	.details-block{
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	
+	.details{
+		width: 85%;
+	}
+	
+	.details-text-block{
+		width: 100%;
+	}
+	
+	.details-text{
+		width: 80%;
+	}
+	
+	.aigul-block{
+		width: 100%;
+	}
+
+	.aigul-text{
+		width: 45%;
+	}
+
+	.aigulButton{
+	  width: 50%;
+	}
+
+	.podarok-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
+	}
+
+	.baby-text{
+		width: 100%;
+		align-self: flex-start;
+		margin-bottom: 2%;
+	}
+
 }
+
+
 
