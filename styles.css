@@ -402,6 +402,8 @@
 
 .details-block{
 	background-color: #003324;
+	border-radius: 15px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 	display: inline-flex; /* Включаем Flexbox */
     flex-direction: column; /* Выстраиваем элементы по колонке */
     align-items: center; /* Центрируем горизонтально */
