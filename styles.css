@@ -498,6 +498,261 @@
 	margin-bottom: 2%;
 }
 
+.anketa-block{
+	background-image: url('picture/backgroundAnketa.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.titleAnketa{
+	margin-top: 10%;
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100%;
+}
+
+.titleAnketaImg{
+	align-self: flex-end;
+	margin-right: 5%;
+	width: 25%;
+}
+
+.textAnketa-block{
+	margin-top: 2%; 
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 60%;
+}
+
+.textAnketa{
+	width: 80%;
+}
+
+.nameSurname-block{
+	margin-top: 1%; 
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 60%;
+}
+
+.nameSurname{
+	align-self: flex-start;
+	width: 30%;
+}
+
+.opros-block{
+	margin-top: 1%; 
+	display: inline-flex; /* Включаем Flexbox */
+    flex-direction: column; /* Выстраиваем элементы по колонке */
+    align-items: flex-start; /* Центрируем горизонтально */
+    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 80%;
+}
+
+.opros{
+	align-self: flex-start;
+	width: 50%;
+}
+
+.container{
+	overflow-x: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form label {
+	font-family: "Cormorant Garamond", serif;
+	font-style: normal;
+	font-size: 35px;
+	align-self: flex-start;
+}
+
+.login-form{
+	width: 70%;
+	padding: 2%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-form h2{
+	font-family: "Cormorant Garamond", serif;
+	font-style: normal;
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+
+.container label{
+	color: black;
+}
+
+.namesurname{
+	font-family: "Cormorant Garamond", serif;
+	font-size: 25px;
+	align-self: flex-start;
+	font-style: normal;
+	padding: 10px;
+	width: 50%;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container-radio{
+	align-self: flex-start;
+	margin-left: 15px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 15px;
+}
+
+input[type="radio"] {
+	padding-left: 0;
+	appearance: none;
+	background: #fff;
+	border: 2px solid #003324;
+	height: 1.5em;
+	width: 1.5em;
+	border-radius: 100%;
+	vertical-align: text-bottom;
+	position: relative;
+}
+
+input[type="radio"]::before{
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+input[type="radio"]:checked::before {
+  border: 5px solid transparent;
+  border-radius: 100%;
+  background: #b4aec2;
+}
+
+input[type="radio"]:focus{
+  outline: solid 1px;
+  outline-offset: 2px;
+}
+
+
+.login-form button {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 25px;
+	width: 300px;
+	height: 50px;
+	outline: none;
+	border-radius: 15px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+	border: none;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.login-form button:hover {
+	transform: scale(1.1);
+	background: #003324;
+	color: #fff;
+}
+
+#sendText {
+	color: #003324;
+	margin-top: 15px;
+	display: block;
+	text-align: center;
+}
+
+.timer{
+	padding: 75px 75px 75px 75px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	background-color:rgba(255, 255, 255, 0.3);
+	height: 400px;
+	width:40%;
+	filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+	border-radius:15px;
+}
+
+.time-count-title{
+	color: black;
+	font-style: normal;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 55px;
+	text-align: center;
+}
+
+.time-count-content{
+	display: flex;
+	justify-content: center;
+	align-items:: center;
+	text-align: center;
+}
+
+.time-count-val{
+	color: #003324;
+	min-width: 79px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 80px;
+	font-style: normal;
+	font-weight: regular;
+	
+}
+
+.time-count-separator{
+	color: #003324;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 300;
+	margin: 0 30px;
+}
+
+.time-count-text{
+	color: black;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+}
+
 
 @media (max-width: 968px) {
 	.music-button {
