@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приглашение на свадьбу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -121,8 +124,81 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Блок с анкетой -->
+	<div class="anketa-block"> 
+		<div class="titleAnketa">
+				<img class="titleAnketaImg" src="picture/titleAnketa.svg" alt="Overlay Image"> </img>
+		</div>
+		<div class="textAnketa-block">
+				<img class="textAnketa" src="picture/textAnketa.svg" alt="Overlay Image"> </img>
+		</div>
+		<div class="container">
+			<form action="#" class="login-form" name="submit-to-google-sheet">
+				<label>Ваши Имя и Фамилия:</label><br />
+				<input class="namesurname" type="text" name="Name" id="Name" autocomplete="off" placeholder="Введите свое имя и фамилию" required>
+				<label>Планируете ли присутствовать на свадьбе?</label><br />
+				<div class="container-radio">
+					<label style="display: flex; align-items: center; margin-bottom: 8px;">
+						<input type="radio" name="choice" value="Да, с удовольствием" required />
+						<span style="margin-left: 8px; font-size: 30px;">Да, с удовольствием</span>
+					</label>
+					<label style="display: flex; align-items: center;">
+						<input type="radio" name="choice" value="Нет, к сожалению" />
+						<span style="margin-left: 8px; font-size: 30px;">Нет, к сожалению</span>
+					</label>
+				</div>
+				<button type="submit">Отправить</button>
+				
+				<span id="sendText"></span>
+			</form>
+		</div>
+	</div>
 	
-    <script src="script.js"></script>
+	<!-- Блок с таймером -->
+	<div class="timer">
+		<h2 class="time-count-title">ДО НАШЕЙ СВАДЬБЫ </h2>
+		<h2 class="time-count-title">ОСТАЛОСЬ:</h2>
+		<div class="time-count-content">
+			<div class="time-count-days">
+				<div class="time-count-val">88</div>
+				<span class="time-count-text">дней</span>
+			</div>
+			<div class="time-count-separator">:</div>
+			<div class="time-count-hours">
+				<div class="time-count-val">00</div>
+				<span class="time-count-text">часов</span>
+			</div>
+			<div class="time-count-separator">:</div>
+			<div class="time-count-minutes">
+				<div class="time-count-val">00</div>
+				<span class="time-count-text">минут</span>
+			</div>
+		</div>
+	
+	</div>
+	
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhj0bYP5VQnes1XNVioZE_pdVjdjtTKxgcDhjzhiDPgXLkVAT2US4uLaC_3pRIgsSE/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const sendText = document.getElementById('sendText')
+
+	  form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		  .then(response =>{
+				sendText.innerHTML = "Спасибо! Ваши данные отправлены успешно"
+				setTimeout(function() {
+					sendText.innerHTML = ""
+				}, 3000)
+				form.reset()
+		  })
+		  .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	
+	<script src="time-count.js"></script>
+	<script src="script.js"></script>
 	<script src="scriptTime.js"></script>
 	<script src="scriptWhatsApp.js"></script>
 	
