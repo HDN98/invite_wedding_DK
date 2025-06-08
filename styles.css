@@ -123,8 +123,8 @@
 }
 
 .heart {
-	margin-top: 130px;
-	margin-left: 230px;
+	margin-top: 7%;
+	margin-left: 13%;
 	position: absolute;
     width: 40px; /* Установите размер сердца */
     height: auto; /* Авто-высота для пропорций */
@@ -869,8 +869,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 78px;
-		margin-left: 143px;
+		margin-top: 18%;
+		margin-left: 35%;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
@@ -1102,8 +1102,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 78px;
-		margin-left: 143px;
+		margin-top: 18%;
+		margin-left: 35%;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
@@ -1348,8 +1348,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 70px;
-		margin-left: 133px;
+		margin-top: 18%;
+		margin-left: 36%;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
