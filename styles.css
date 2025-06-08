@@ -698,6 +698,14 @@ input[type="radio"]:focus{
 	text-align: center;
 }
 
+.timer-block{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
 .timer{
 	padding: 75px 75px 75px 75px;
 	display: flex;
