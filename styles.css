@@ -1,14 +1,14 @@
  body {
-	 font-family: 'Georgia', serif;
-	 color: #fff;
-	 margin: 0;
-	 padding: 0;
-	 height: 100%;
-	 overflow: auto;
-	 justify-content: center; 
-	 align-items: flex-start; 
-	 height: auto; 
-	 overflow-x: hidden;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	overflow: auto;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: auto; 
+	overflow-x: hidden;
 }
 
 .background {
@@ -366,28 +366,74 @@
 	width: 35%;
 }
 
-.color-block{
-	display: inline-flex; /* Включаем Flexbox */
-    flex-direction: column; /* Выстраиваем элементы по колонке */
-    align-items: center; /* Центрируем горизонтально */
-    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+.container-dress-circle{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px;
 	overflow-x: hidden;
-	overflow-y: hidden;
-	width:100%;
-}
-
-.color{
-	width: 25%;
-}
-
-.dress-code-text3{
 	width: 100%;
 }
 
-.dress-code-small-text{
-	padding-top: 2%;
+.dress-circle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 40%;
+}
+
+.circle1{
+	width: 120px;
+	height: 120px;
+	background: #e6d9cc;
+	border-radius: 50%;
+	box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.circle2{
+	width: 120px;
+	height: 120px;
+	background: #cfbcaa;
+	border-radius: 50%;
+	box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.circle3{
+	width: 120px;
+	height: 120px;
+	background: #57432f;
+	border-radius: 50%;
+	box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.circle4{
+	width: 120px;
+	height: 120px;
+	background: #abb491;
+	border-radius: 50%;
+	box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.circle5{
+	width: 120px;
+	height: 120px;
+	background: #6c7b5f;
+	border-radius: 50%;
+	box-shadow: 5px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.dress-code-text3{
 	width: 50%;
+	padding-top: 2%;
 	padding-bottom: 2%;
+	text-align: left;
+}
+
+.dress-code-small-text{
+	text-align: left;
+	color: #003324;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .details-block-obertka{
@@ -414,6 +460,21 @@
 	margin-bottom: 2%;
 }
 
+.details-text-block{
+	margin: 20px; 
+	width: 80%;
+	text-align: center;
+}
+
+.details-text{
+	color: #fff;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 300;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
 .titleDetails{
 	align-self: flex-start;
 	margin-left: 5%;
@@ -425,20 +486,47 @@
 	width: 75%;
 }
 
-.details-text-block{
-	margin-top: 2%;
-	display: inline-flex; /* Включаем Flexbox */
-    flex-direction: column; /* Выстраиваем элементы по колонке */
-    align-items: center; /* Центрируем горизонтально */
-    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
-	overflow-x: hidden;
-	overflow-y: hidden;
-	width: 80%;
+.container-details {
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%; /* или фиксированная ширина */
 }
 
-.details-text{
-	width: 75%;
+.pearl{
+	width: 30%;
 }
+
+.row-details {
+  display: flex;
+  width: 90%;
+  margin-bottom: 10px; /* для разделения строк, по желанию */
+}
+
+.col {
+  padding: 10px; /* внутренние отступы */
+}
+
+.col-30 {
+	display: flex;
+	align-items: center; /* вертикальное центрирование */
+	justify-content: center;
+	flex: 1; /* занимает 30% */
+}
+
+.col-70 {
+	text-align: left;
+	color: #fff;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 300;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+	flex: 7; /* занимает 70% */
+}
+
 
 .aigul-block{
 	margin-top: 2%;
@@ -470,35 +558,6 @@
   margin-bottom: 2%;
 }
 
-.podarok-block{
-	display: inline-flex; /* Включаем Flexbox */
-    flex-direction: column; /* Выстраиваем элементы по колонке */
-    align-items: center; /* Центрируем горизонтально */
-    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
-	overflow-x: hidden;
-	overflow-y: hidden;
-	width: 80%;
-}
-
-.podarok-text{
-	width: 80%;
-	margin-bottom: 2%;
-}
-
-.baby-block{
-	display: inline-flex; /* Включаем Flexbox */
-    flex-direction: column; /* Выстраиваем элементы по колонке */
-    align-items: center; /* Центрируем горизонтально */
-    justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
-	overflow-x: hidden;
-	overflow-y: hidden;
-	width: 80%;
-}
-
-.baby-text{
-	width: 80%;
-	margin-bottom: 2%;
-}
 
 .anketa-block{
 	background-image: url('picture/backgroundAnketa.svg');
@@ -703,6 +762,11 @@ input[type="radio"]:focus{
 }
 
 .timer-block{
+	background-image: url('picture/background-timer.svg');
+	background-repeat: no-repeat; /* отключает повторение изображения */
+	background-position: bottom; /* размещает изображение внизу блока */
+  /* при необходимости, можно задать размер фона */
+	background-size: 150% auto;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -891,14 +955,7 @@ input[type="radio"]:focus{
 	.details{
 		width: 85%;
 	}
-	
-	.details-text-block{
-		width: 100%;
-	}
-	
-	.details-text{
-		width: 80%;
-	}
+		
 	
 	.aigul-block{
 		width: 100%;
@@ -912,17 +969,6 @@ input[type="radio"]:focus{
 	  width: 50%;
 	}
 
-	.podarok-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
-
-	.baby-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
 	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
@@ -971,6 +1017,52 @@ input[type="radio"]:focus{
 		margin: 0 5px;
 	}
 	.time-count-text{
+		font-size: 20px;
+	}
+		.dress-circle{
+		width: 70%;
+	}
+	.circle1{
+		width: 50px;
+		height: 50px;
+	}
+	.circle2{
+		width: 50px;
+		height: 50px;
+	}
+	.circle3{
+		width: 50px;
+		height: 50px;
+	}
+	.circle4{
+		width: 50px;
+		height: 50px;
+	}
+	.circle5{
+		width: 50px;
+		height: 50px;
+	}
+	.dress-code-text3{
+		margin-bottom: 20px;
+		width: 80%;
+	}
+	.dress-code-small-text{
+		font-size: 20px;
+	}
+	.col {
+		padding: 5px; /* внутренние отступы */
+	}
+	.details-text{
+		font-size: 23px;
+	}
+	.pearl{
+		width: 40%;
+	}
+	.row-details {
+	  width: 100%;
+	}
+
+	.col-70 {
 		font-size: 20px;
 	}
 }
@@ -1088,8 +1180,29 @@ input[type="radio"]:focus{
 	.dress-code-big-text{
 		width: 70%;
 	}
-	.color{
-		width: 65%;
+
+	.dress-circle{
+		width: 70%;
+	}
+	.circle1{
+		width: 50px;
+		height: 50px;
+	}
+	.circle2{
+		width: 50px;
+		height: 50px;
+	}
+	.circle3{
+		width: 50px;
+		height: 50px;
+	}
+	.circle4{
+		width: 50px;
+		height: 50px;
+	}
+	.circle5{
+		width: 50px;
+		height: 50px;
 	}
 	.dress-code-small-text{
 		width: 85%;
@@ -1104,13 +1217,6 @@ input[type="radio"]:focus{
 		width: 85%;
 	}
 	
-	.details-text-block{
-		width: 100%;
-	}
-	
-	.details-text{
-		width: 80%;
-	}
 	
 	.aigul-block{
 		width: 100%;
@@ -1124,17 +1230,6 @@ input[type="radio"]:focus{
 	  width: 50%;
 	}
 
-	.podarok-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
-
-	.baby-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
 	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
@@ -1187,6 +1282,35 @@ input[type="radio"]:focus{
 	.time-count-text{
 		font-size: 20px;
 	}
+	.dress-code-text3{
+		margin-bottom: 20px;
+		width: 80%;
+	}
+	.dress-code-small-text{
+		font-size: 20px;
+	}
+	.details-text-block{
+		width: 90%;
+		text-align: center;
+	}
+	
+	.col {
+		padding: 5px; /* внутренние отступы */
+	}
+	.details-text{
+		font-size: 23px;
+	}
+	.pearl{
+		width: 40%;
+	}
+	.row-details {
+	  width: 100%;
+	}
+
+	.col-70 {
+		font-size: 20px;
+	}
+	
 }
 
 @media (max-width: 390px) {
@@ -1320,15 +1444,7 @@ input[type="radio"]:focus{
 	.details{
 		width: 85%;
 	}
-	
-	.details-text-block{
-		width: 100%;
-	}
-	
-	.details-text{
-		width: 80%;
-	}
-	
+
 	.aigul-block{
 		width: 100%;
 	}
@@ -1341,17 +1457,6 @@ input[type="radio"]:focus{
 	  width: 50%;
 	}
 
-	.podarok-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
-
-	.baby-text{
-		width: 100%;
-		align-self: flex-start;
-		margin-bottom: 2%;
-	}
 	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
@@ -1400,6 +1505,52 @@ input[type="radio"]:focus{
 		margin: 0 5px;
 	}
 	.time-count-text{
+		font-size: 20px;
+	}
+		.dress-circle{
+		width: 70%;
+	}
+	.circle1{
+		width: 50px;
+		height: 50px;
+	}
+	.circle2{
+		width: 50px;
+		height: 50px;
+	}
+	.circle3{
+		width: 50px;
+		height: 50px;
+	}
+	.circle4{
+		width: 50px;
+		height: 50px;
+	}
+	.circle5{
+		width: 50px;
+		height: 50px;
+	}
+	.dress-code-text3{
+		margin-bottom: 20px;
+		width: 80%;
+	}
+	.dress-code-small-text{
+		font-size: 20px;
+	}
+	.col {
+		padding: 5px; /* внутренние отступы */
+	}
+	.details-text{
+		font-size: 23px;
+	}
+	.pearl{
+		width: 40%;
+	}
+	.row-details {
+	  width: 100%;
+	}
+
+	.col-70 {
 		font-size: 20px;
 	}
 
