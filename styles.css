@@ -1,14 +1,14 @@
  body {
-    font-family: 'Georgia', serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-	height: 100%;
-	overflow: auto;
-    justify-content: center; 
-    align-items: flex-start; 
-    height: auto; 
-	overflow-x: hidden;
+	 font-family: 'Georgia', serif;
+	 color: #fff;
+	 margin: 0;
+	 padding: 0;
+	 height: 100%;
+	 overflow: auto;
+	 justify-content: center; 
+	 align-items: flex-start; 
+	 height: auto; 
+	 overflow-x: hidden;
 }
 
 .background {
@@ -600,7 +600,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .login-form h2{
@@ -634,6 +633,11 @@
 	margin-left: 15px;
 	font-family: "Cormorant Garamond", serif;
 	font-size: 15px;
+}
+
+.radio-text{
+	margin-left: 8px;
+	font-size: 30px;
 }
 
 input[type="radio"] {
@@ -762,6 +766,8 @@ input[type="radio"]:focus{
 	font-style: normal;
 	font-weight: 400;
 }
+
+
 
 
 @media (max-width: 968px) {
@@ -917,7 +923,7 @@ input[type="radio"]:focus{
 		align-self: flex-start;
 		margin-bottom: 2%;
 	}
-		.titleAnketaImg{
+	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
 	}
@@ -1085,7 +1091,7 @@ input[type="radio"]:focus{
 	.color{
 		width: 65%;
 	}
-		.dress-code-small-text{
+	.dress-code-small-text{
 		width: 85%;
 	}
 	
@@ -1129,7 +1135,7 @@ input[type="radio"]:focus{
 		align-self: flex-start;
 		margin-bottom: 2%;
 	}
-		.titleAnketaImg{
+	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
 	}
@@ -1172,10 +1178,12 @@ input[type="radio"]:focus{
 	.time-count-val{
 		font-size: 50px;	
 	}
+
 	.time-count-separator{
 		font-size: 50px;
 		margin: 0 5px;
 	}
+
 	.time-count-text{
 		font-size: 20px;
 	}
@@ -1344,7 +1352,7 @@ input[type="radio"]:focus{
 		align-self: flex-start;
 		margin-bottom: 2%;
 	}
-		.titleAnketaImg{
+	.titleAnketaImg{
 		margin-right: 5%;
 		width: 45%;
 	}
@@ -1396,6 +1404,3 @@ input[type="radio"]:focus{
 	}
 
 }
-
-
-
