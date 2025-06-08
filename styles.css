@@ -123,8 +123,8 @@
 }
 
 .heart {
-	margin-top: 7%;
-	margin-left: 13%;
+	margin-top: 130px;
+	margin-left: 230px;
 	position: absolute;
     width: 40px; /* Установите размер сердца */
     height: auto; /* Авто-высота для пропорций */
@@ -541,7 +541,14 @@
 }
 
 .aigul-text{
-	width: 40%;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 10px;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 500;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .aigulButton{
@@ -862,8 +869,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 18%;
-		margin-left: 35%;
+		margin-top: 78px;
+		margin-left: 143px;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
@@ -960,9 +967,9 @@ input[type="radio"]:focus{
 	.aigul-block{
 		width: 100%;
 	}
-
+	
 	.aigul-text{
-		width: 45%;
+		font-size: 35px;
 	}
 
 	.aigulButton{
@@ -1095,8 +1102,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 18%;
-		margin-left: 35%;
+		margin-top: 78px;
+		margin-left: 143px;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
@@ -1222,9 +1229,6 @@ input[type="radio"]:focus{
 		width: 100%;
 	}
 
-	.aigul-text{
-		width: 45%;
-	}
 
 	.aigulButton{
 	  width: 50%;
@@ -1310,6 +1314,9 @@ input[type="radio"]:focus{
 	.col-70 {
 		font-size: 20px;
 	}
+	.aigul-text{
+		font-size: 35px;
+	}
 	
 }
 
@@ -1341,8 +1348,8 @@ input[type="radio"]:focus{
 		width: 70%;
 	}
 	.heart {
-		margin-top: 18%;
-		margin-left: 36%;
+		margin-top: 70px;
+		margin-left: 133px;
 		width: 30px; /* Установите размер сердца */
 	}
 	.no-officiall-text{
@@ -1450,7 +1457,7 @@ input[type="radio"]:focus{
 	}
 
 	.aigul-text{
-		width: 45%;
+		font-size: 35px;
 	}
 
 	.aigulButton{
@@ -1555,3 +1562,6 @@ input[type="radio"]:focus{
 	}
 
 }
+
+
+
